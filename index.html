@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Linkedin</title>
+</head>
+
+<body id="bgBody" class="bg-light">
+    <!-- Menu -->
+    <div id="modeLD" class="bg-white box3d">
+        <div class="container-xxl ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="iconIn" src="images/menu/inco-in.png"></a>
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback d-none d-lg-block"></span>
+                        <input type="text" class="form-control" placeholder=" Recherche">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link p-0 iconClass">
+                                    <i class="fas fa-home"></i>
+                                </a>
+                                <span class="textMenu">Accueil</span>
+                            </li>
+
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link p-0 iconClass">
+                                    <i class="fas fa-user-friends"></i>
+                                </a>
+                                <span class="textMenu">Réseau</span>
+                            </li>
+
+                            <li class="nav-item mx-3">
+                                <a href="#" class="nav-link p-0 iconClass">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                                <span class="textMenu">Emploi</span>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link p-0 iconClass">
+                                    <span class="badge badge-light">6</span>
+                                    <i class="fas fa-comment-dots"></i>
+                                </a>
+                                <span class="textMenu">Messagerie</span>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link p-0 iconClass">
+                                    <span class="badge badge-light">9</span>
+                                    <i class="fas fa-bell"></i>
+                                </a>
+                                <span class="textMenu">Notification</span>
+                            </li>
+
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div><img src="images/menu/face.jpg" class="rounded-circle faceImg"></div>
+                                    <span id="dropVous" class="textMenu">Vous</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="boxVous">
+                                        <div class="d-flex align-item*center justify-content">
+                                            <img src="images/menu/face.jpg" class="rounded-circle faceImgDrop">
+                                            <h6>Mathilde Dupont</h6><br>
+                                        </div>
+                                        <div>
+                                            <p class="textVous">Designer UI-UX</p>
+                                            <div class="btnVous">Voir Profil</div>
+                                        </div>
+                                    </div>
+                                    <hr class="dropdown-divider">
+                                    <h6 class="h6vous">Compte</h6>
+                                    <li><a class="dropdown-item" href="#">Préférences</a></li>
+                                    <li><a class="dropdown-item" href="#">Aide</a></li>
+                                    <li><a class="dropdown-item" href="#">Langue</a></li>
+                                    <hr class="dropdown-divider">
+                                    <h6 class="h6vous">Gérer</h6>
+                                    <li><a class="dropdown-item" href="#">Post</a></li>
+                                    <li><a class="dropdown-item" href="#">Compte offre d'emploi</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                                </ul>
+                            </li>
+
+                            <div class="border"></div>
+
+                            <li class="nav-item dropdown mx-3">
+                                <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-th"></i><br>
+                                    <span id="droptext" class="textMenu">Produits</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                    <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                </ul>
+                            </li>
+                            <li class="essaiPremium">
+                                Essai de Premium gratuit d'un mois
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Content -->
+
+    <div class="container-xl mt-3">
+        <div class="row gx-3">
+            <!-- Side Bar -->
+            <div class="col-md-12 col-lg-3 my-3 sidebar">
+                <!-- Dark Mode -->
+                <div class="switch-holder">
+                    <div class="switch-label">
+                        <i id="iconMoon" class="fa fa-moon"></i>
+                        <i id="iconSun" class="fa fa-sun hide"></i>
+                        <span id="lightMode">Dark Mode</span>
+                    </div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" id="darkMode">
+                        <label for="darkMode"></label>
+                    </div>
+                </div>
+
+                <div class="border bg-white styleBox mt-3 darkModeBox">
+                    <div class="px-3 pt-3">Gérer mon réseau</div>
+                    <ul class="p-0 m-0">
+                        <li class="col-12 marPad">
+                            <i class="fas fa-user-tie iconReseau"></i>Relations
+                            <span class="badgePos">45</span>
+                        </li>
+                        <li class="col-12 marPad">
+                            <i class="fas fa-id-badge iconReseau"></i>Co-équipier
+                            <span class="badgePos"></span>
+                        </li>
+                        <li class="col-12 marPad">
+                            <i class="fas fa-address-book iconReseau"></i>Contatcs
+                            <span class="badgePos">69</span>
+                        </li>
+                        <li class="col-12 marPad">
+                            <i class="fas fa-comment-alt iconReseau"></i>Personnes que je suis
+                            <span class="badgePos">14</span>
+                        </li>
+                        <li class="col-12 marPad">
+                            <i class="fas fa-building iconReseau"></i>Pages
+                            <span class="badgePos">7</span>
+                        </li>
+                        <li class="col-12 marPad">
+                            <i class="fas fa-hashtag iconReseau"></i>Hashtag
+                            <span class="badgePos">27</span>
+                        </li>
+                    </ul>
+
+                    <div class="col-12 d-none d-lg-block border-top p-3">
+                        <small class="d-flex justify-content-end mb-3">Ad ...</small>
+                        <div class="text-center textAd">Ready for your next opportunity ?</div>
+                        <div class="d-flex justify-content-center my-3">
+                            <img src="images/sidebar/face.png" class="rounded-circle imgSidebar mx-2">
+                            <img src="images/sidebar/company.jpeg" class="imgSidebar2 mx-2">
+                        </div>
+                        <div class="text-center">Mathilde, <span class="lenovo">Lenovo Group</span> is hiring!</div>
+                        <div class="btnSide m-auto  my-3">Suivre</div>
+                    </div>
+
+                    <div class="col-12 d-none d-lg-block border-top p-3">
+                        <div class="text-center mb-1">Ajouter des contacts personnels</div>
+                        <div class="text-center textAd">Invitez vos contacts à rejoindre votre réseau pour ne jamais
+                            perdre contact
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <div class="btnSide2 mx-2 ">Conitnuer</div>
+                            <div>Plus d'options</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-none d-lg-block border-top p-3">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center textAd mx-3">Infos</div>
+                            <div class="text-center textAd mx-3">Assistance clientèle</div>
+                        </div>
+                        <div class="text-center textAd dropdown-toggle mt-2">Conditions générales et confidentialité
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <div class="text-center textAd mx-3">Publicité</div>
+                            <div class="text-center textAd dropdown-toggle mx-3">Solutions professionnelles</div>
+                        </div>
+                        <div class="text-center textAd mt-2">Télécharger l'application Linkedin <span
+                                class="mx-3 text-primary">Plus</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <img src="images/sidebar/logo.png" class="logoSidebad mt-1">
+                            <div class="text-center textAd mx-3">Linkedin Corporation © 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invitation -->
+            <div class="col-md-12 col-lg-9 my-2 invitation">
+                <div class="p-3 border bg-white styleBox darkModeBoxI">
+                    <i class="fas fa-times posClose"></i>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-2">
+                            <img class="rounded-circle" src="images/invitation/face-invite.png">
+                        </div>
+                        <div class="col-md-12 col-lg-10">
+                            <h6>Connaissez-vous Marie Couture ? Envoyer une invitation pour entrer en relation.</h6>
+                            <p>CEO chez Flex Design - Stratège Numérique</p>
+                            <p><i class="fas fa-link">&nbsp;&nbsp;<span class="styleIcon">Vous avez 5 Relation en
+                                        commun.</span></i></p>
+                            <div class="d-flex">
+                                <div class="btnIgnore">Ignorer</div>
+                                <div class="btnInvite">Oui, se connecter</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 my-3">
+                    <div class="border bg-white styleBox darkModeBoxIb">
+                        <div class="d-flex border-bottom p-3">
+                            <p class="col-9 textL m-0">Invitations</p>
+                            <p class="col-3 textR m-0">Tous voir</p>
+                        </div>
+
+                        <div id="darkModeCard" class="row p-3 m-0 border-bottom bgCard">
+                            <div class="col-md-12 col-lg-1 text-center p-0 m-0">
+                                <img class="rounded-circle imgInvit2" src="images/invitation/face-1.png">
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <h6 class="m-1">Clémentine Roy</h6>
+                                <p class="m-1">Designer UX-UI - Chez Nurun</p>
+                                <p class="m-0"><i class="fas fa-link m-1">&nbsp;&nbsp;<span class="styleIcon">Vous avez
+                                            10
+                                            Relation en commun.</span></i></p>
+                            </div>
+                            <div class="col-md-12 col-lg-5">
+                                <div class="d-flex posBtn">
+                                    <div class="btnIgnore2">Ignorer</div>
+                                    <div class="btnInvite2">Accepter</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="darkModeCardb" class="row p-3 m-0 border-bottom bgCard">
+                            <div class="col-md-12 col-lg-1 text-center p-0 m-0">
+                                <img class="rounded-circle imgInvit2" src="images/invitation/face-2.png">
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <h6 class="m-1">Fabien Barthez</h6>
+                                <p class="m-1">Full-Stack Développeur - Chez Microsoft</p>
+                                <p class="m-0"><i class="fas fa-link m-1">&nbsp;&nbsp;<span class="styleIcon">Vous avez
+                                            18
+                                            Relation en commun.</span></i></p>
+                            </div>
+                            <div class="col-md-12 col-lg-5">
+                                <div class="d-flex posBtn">
+                                    <div class="btnIgnore2">Ignorer</div>
+                                    <div class="btnInvite2">Accepter</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="darkModeCardc" class="row p-3 m-0 bgCard">
+                            <div class="col-md-12 col-lg-1 text-center p-0 m-0">
+                                <img class="rounded-circle imgInvit2" src="images/invitation/face-3.png">
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <h6 class="m-1">Jacques Villeneuve</h6>
+                                <p class="m-1">Front-End Développeur - Chez Nuavamed</p>
+                                <p class="m-0"><i class="fas fa-link m-1">&nbsp;&nbsp;<span class="styleIcon">Vous avez
+                                            11
+                                            Relation en commun.</span></i></p>
+                            </div>
+                            <div class="col-md-12 col-lg-5">
+                                <div class="d-flex posBtn">
+                                    <div class="btnIgnore2">Ignorer</div>
+                                    <div class="btnInvite2">Accepter</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6 class="p-3 m-0 text-center voirPlus">Voir plus</h6>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Network -->
+                <div class="col-12 network mt-3">
+                    <div class="border bg-white styleBox darkModeBoxN">
+                        <div class="d-flex border-bottom p-3 ">
+                            <p class="col-9 textL m-0">Personnes similaires</p>
+                            <p class="col-3 textR m-0">Tous voir</p>
+                        </div>
+                        <div class="row p-3 ">
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n1.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-1.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Léa Martin<small>Front End</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">8
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n2.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-2.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Erling Haaland<small>Designer UX</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">15
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n3.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-3.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Émilie Roy<small>Responsable RH</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">5
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n4.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-4.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Eddy Carter<small>Back End</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">3
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n5.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-5.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Edwin Dagoy<small>Intégrateur Web</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">7
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n6.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-6.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Roger Hanin<small>Full Stack</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">6
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n7.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-7.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Anne Marie<small>Designer</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">4
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n8.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-8.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Toto Wolff<small>Full Stack</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">1
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 d-none d-md-block d-lg-none mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-n9.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/network-9.jpg" class="profile" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h2>Kaylie Ruth<small>Desinger UI-UX</small></h2>
+                                        <p class="m-0"><i class="fas fa-link m-1">&nbsp;<span class="styleIconCard">10
+                                                    Relation en commun.</span></i></p>
+                                        <div class="btnNetwork">Se connecter</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="p-3 m-0 text-center border-top voirPlus">Voir plus</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Company-->
+                <div class="col-12 mt-3 network">
+                    <div class="border bg-white styleBox darkModeBoxC">
+                        <div class="d-flex border-bottom p-3">
+                            <p class="col-9 m-0 textL">Pages populaires à suivre</p>
+                            <p class="col-3 textR m-0">Tous voir</p>
+                        </div>
+                        <div class="row p-3 ">
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c1.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-1.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Microsoft</div>
+                                        <span class="styleIconCardCompany">15M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c2.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-2.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Teams</div>
+                                        <span class="styleIconCardCompany">900k Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c3.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-3.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Google</div>
+                                        <span class="styleIconCardCompany">100M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c4.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-4.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Node JS</div>
+                                        <span class="styleIconCardCompany">250 789 Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c5.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-5.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">React</div>
+                                        <span class="styleIconCardCompany">3M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c6.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-6.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Lenovo</div>
+                                        <span class="styleIconCardCompany">7M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c7.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-7.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">JavaScript</div>
+                                        <span class="styleIconCardCompany">35M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c8.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-8.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Meta</div>
+                                        <span class="styleIconCardCompany">15M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 d-none d-md-block d-lg-none mb-3">
+                                <div class="card profile-card-3 border">
+                                    <div class="background-block">
+                                        <img src="images/network/bg-c9.jpg" class="background" />
+                                    </div>
+                                    <div class="profile-thumb-block">
+                                        <img src="images/network/company-9.jpg" class="profileCompamy" />
+                                    </div>
+                                    <div class="card-contentCompany">
+                                        <div class="titleCardCompany">Dell</div>
+                                        <span class="styleIconCardCompany">40M Abonnés</span>
+                                        <div class="btnNetwork">Suivre</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="p-3 m-0 text-center border-top voirPlus">Voir plus</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,713 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+/* ******* Default ******* */
+* {
+  line-height: 1.2em;
+  list-style: none;
+}
+
+.textL {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.textR {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+/* *******  menu NavBar ******** */
+
+.box3d {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+nav i {
+  font-size: 1.2rem;
+  color: #0083b2;
+}
+
+nav .iconClass {
+  position: relative;
+}
+
+nav .iconClass span {
+  position: absolute;
+  top: -8px;
+  right: 12px;
+  display: block;
+  color: white;
+  background-color: red;
+  border-radius: 50px;
+}
+
+nav .textMenu {
+  font-size: 14px;
+}
+
+nav .faceImg {
+  width: 40%;
+}
+
+nav .faceImgDrop {
+  width: 60%;
+  padding: 3%;
+  margin: 3%;
+}
+
+nav .nav-item {
+  cursor: pointer;
+}
+
+nav .nav-item:hover {
+  border-bottom: 1px solid #0083b2;
+}
+
+nav .boxVous {
+  width: 100%;
+  padding: 3% 10%;
+}
+
+nav .textVous {
+  padding-left: 2%;
+}
+
+nav .essaiPremium {
+  cursor: pointer;
+  color: #c5a30d;
+  width: 15%;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+nav .h6vous {
+  padding: 3% 10%;
+}
+
+nav .btnVous {
+  border: 2px solid #0083b2;
+  padding: 1%;
+  text-align: center;
+  border-radius: 50px;
+}
+
+nav .btnVous:hover {
+  background-color: #0083b2;
+  color: white;
+}
+
+/*** Search Bar ***** */
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* *******  dark mode ******* */
+
+.darkModeNav {
+  background-color: #17242c;
+  color: white;
+}
+
+.textDrop {
+  color: white;
+  font-size: 14px;
+}
+
+.bg-darkB {
+  background-color: #292929;
+  color: white;
+}
+
+.bg-box {
+  background-color: #17242c;
+}
+
+.bg-innerI {
+  color: #17242c;
+}
+
+.bg-boxNet {
+  background-color: #17242c;
+}
+
+/* *******  dark mode btn******* */
+.switch-holder {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-label {
+  width: 150px;
+}
+
+.switch-label i {
+  margin-right: 5px;
+}
+
+.switch-toggle {
+  height: 40px;
+}
+
+.switch-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
+.switch-toggle input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0;
+  cursor: pointer;
+
+  box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.6),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.switch-toggle input[type="checkbox"] + label::before {
+  position: absolute;
+  content: "OFF";
+  font-size: 13px;
+  text-align: center;
+  line-height: 25px;
+  top: 8px;
+  left: 8px;
+  width: 45px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #d1dad3;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5),
+    3px 3px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+}
+
+.switch-toggle input[type="checkbox"]:checked + label::before {
+  left: 50%;
+  content: "ON";
+  color: #fff;
+  background-color: #00b33c;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5), 3px 3px 5px #00b33c;
+}
+
+/* ********* side bar ********* */
+
+.sidebar .styleBox {
+  border-radius: 15px;
+}
+
+.sidebar .marPad {
+  padding: 0 5%;
+  margin: 5% 0;
+}
+
+.sidebar .badgePos {
+  float: right;
+}
+
+.sidebar .iconReseau {
+  padding-right: 5%;
+}
+
+.sidebar li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #0083b2;
+  transition: 0.7s;
+}
+
+.sidebar .imgSidebar {
+  width: 35%;
+}
+
+.sidebar .imgSidebar2 {
+  width: 35%;
+  border-radius: 20px;
+}
+
+.sidebar .textAd {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.sidebar .lenovo {
+  font-weight: bold;
+}
+
+.sidebar .btnSide {
+  cursor: pointer;
+  width: 60%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #0083b2;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sidebar .btnSide:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+.sidebar .btnSide2 {
+  cursor: pointer;
+  width: 40%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #0083b2;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.sidebar .btnSide2:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+.sidebar .logoSidebad {
+  width: 25%;
+  height: 15px;
+}
+
+/* ********* Invitation **** */
+
+.invitation p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.invitation h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.invitation .styleIcon {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.invitation .styleBox {
+  border-radius: 15px;
+}
+
+.invitation img {
+  width: 80%;
+}
+
+.invitation .btnInvite {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 25%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #0083b2;
+  padding: 1%;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.invitation .btnInvite:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+.invitation .btnIgnore {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 25%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #b3b6b9;
+  color: gray;
+  padding: 1%;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 1%;
+}
+
+.invitation .btnIgnore:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+.invitation .posClose {
+  cursor: pointer;
+  position: absolute;
+  right: 17%;
+}
+
+/* *** invitation 2 *** */
+
+.invitation .imgInvit2 {
+  width: 100%;
+}
+
+.invitation .posBtn {
+  position: relative;
+  top: 33%;
+}
+
+.invitation .voirPlus {
+  color: #0083b2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invitation .bgCard {
+  background-color: #e6f7ff;
+}
+
+.invitation .btnInvite2 {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #0083b2;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.invitation .btnInvite2:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+.invitation .btnIgnore2 {
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #b3b6b9;
+  color: gray;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 1%;
+}
+
+.invitation .btnIgnore2:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+/* ******* Profile Card Network ****** */
+
+.network .styleIconCard {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.network .styleBox {
+  border-radius: 15px;
+}
+
+.network .voirPlus {
+  color: #0083b2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.network .profile-card-3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.network .profile-card-3:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+.network .profile-card-3 .background-block {
+  float: left;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.network .profile-card-3 .background-block .background {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-transform: scale(1.8);
+  transform: scale(1);
+}
+
+.network .profile-card-3 .card-content {
+  width: 100%;
+  padding: 1%;
+  color: #232323;
+  float: left;
+  background: white;
+  height: 50%;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+
+.network .profile-card-3 .card-content::before {
+  content: "";
+  background: white;
+  width: 120%;
+  height: 100%;
+  left: 5px;
+  bottom: 51px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-13deg);
+}
+
+.network .profile-card-3 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 99999;
+}
+
+.network .profile-card-3 h2 {
+  margin: 5% 0 5px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.network .profile-card-3 h2 small {
+  display: block;
+  font-size: 15px;
+  margin: 0 0 10% 0;
+}
+
+.network .btnNetwork {
+  margin: 5% auto 5%;
+  cursor: pointer;
+  width: 90%;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #0083b2;
+  padding: 3%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.network .btnNetwork:hover {
+  background-color: #0083b2;
+  color: white;
+  transition: 0.3s;
+}
+
+/* ******* Profile Card Network ****** */
+
+.network .profile-card-3 .profileCompamy {
+  border-radius: 10%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 99999;
+}
+
+.network .profile-card-3 .card-contentCompany {
+  width: 100%;
+  padding: 1%;
+  color: #232323;
+  float: left;
+  background: white;
+  height: 50%;
+  border-radius: 0 0 5px 5px;
+  position: relative;
+  z-index: 9999;
+}
+
+.network .profile-card-3 .card-contentCompany::before {
+  content: "";
+  background: white;
+  width: 120%;
+  height: 100%;
+  left: 0;
+  bottom: 51px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+}
+
+.network .titleCardCompany {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.network .styleIconCardCompany {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+/******** Media Queries ******* */
+@media (max-width: 997px) {
+  /* ****** NavBar ****** */
+  nav .nav-item {
+    text-align: center;
+    padding: 3% 0;
+  }
+
+  nav .iconClass span {
+    top: -8px;
+    right: 187px;
+  }
+
+  nav .faceImg {
+    width: 10%;
+  }
+
+  nav .faceImgDrop {
+    width: 25%;
+    padding: 3%;
+    margin: 3%;
+  }
+
+  nav .nav-item:hover {
+    border-bottom: 0px solid transparent;
+  }
+
+  nav .essaiPremium {
+    padding: 5% 0;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  nav .h6vous {
+    padding: 3% 4%;
+  }
+
+  nav .border {
+    display: none;
+  }
+
+  /* ****** Side bar **** */
+  .sidebar li {
+    text-align: left;
+  }
+
+  /* ****** btn dark mode **** */
+
+  /* ********* Invitation ********* */
+
+  .invitation img {
+    width: 25%;
+    margin-bottom: 2%;
+  }
+
+  .invitation .styleBox {
+    text-align: center;
+  }
+
+  .invitation .posClose {
+    cursor: pointer;
+    position: absolute;
+    right: 6%;
+  }
+
+  .invitation .btnIgnore {
+    cursor: pointer;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #b3b6b9;
+    color: gray;
+    padding: 1%;
+    text-align: center;
+    border-radius: 50px;
+    margin-right: 1%;
+  }
+
+  .invitation .btnInvite {
+    cursor: pointer;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #0083b2;
+    padding: 1%;
+    text-align: center;
+    border-radius: 50px;
+  }
+
+  /* *** invitation 2 *** */
+
+  .invitation .textR {
+    text-align: right;
+  }
+
+  .invitation .imgInvit2 {
+    width: 20%;
+  }
+
+  .invitation .posBtn {
+    top: 0%;
+    margin: 3%;
+  }
+
+  /* *** Network *** */
+  .network img {
+    width: 100% !important;
+  }
+}
